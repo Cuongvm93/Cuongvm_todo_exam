@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(35,135,175);
+    background: radial-gradient(circle, rgba(35,135,175,1) 22%, rgba(3,213,255,1) 89%);
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    background-color: white;
+    width: 370px;
+    height: 570px;
+    padding: 10px;
+}
+input{
+    padding: 5px;
+    width: 80%;
+    height: 30px;
+}
+.fa-solid{
+    position: relative;
+    font-size: 32px;
+    color: rgb(16, 160, 218);
+    top:7px
+}
+.fa-sharp.fa-solid.fa-trash{
+    font-size: 18px;
+     position: absolute;
+     right: 3px;
+     top:5px;
+    /* margin-left: 0px;
+    margin-bottom: 0px; */
+    display: none;
+    z-index: 1000;
+}
+.content-container{
+    margin-top: 10px;
+   display: flex;
+   flex-direction: column;
+   gap:5px;
+   max-height: 385.8px;
+    overflow-y: auto;
+}
+.todo_detail{
+    position: relative;
+    width: 90%;
+    background-color: rgba(184, 179, 179, 0.941);
+    padding: 6px 6px 6px;
+    z-index: 100;
+}
+.todo_detail input{
+    position: relative;
+    top: 2px;
+    height: 20px;
+    width: 20px;
+}
+.todo_detail:hover .fa-sharp.fa-solid.fa-trash{
+    display: block;
+}
+
+.pagination {
+    margin-top: 7px;
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 8px;
+    text-decoration: none;
+  }
+  .pagination a:hover{
+    background-color: rgb(155, 153, 153);
+  }
+  
+  .active{
+    background-color: rgb(240, 106, 29);
+  }
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container button{
+    background-color:rgb(16, 160, 218);
+    border:none;
+    height: 30px;
+    width: 80px;
+    color:aliceblue
+}
+
